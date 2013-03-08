@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Scale.css
 ### Mobile first boilerplate focusing on readability
 

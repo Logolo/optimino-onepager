@@ -1,3 +1,53 @@
+<?php
+//If the form is submitted
+if(isset($_POST['submit'])) {
+
+	//Check to make sure that the name field is not empty
+	if(trim($_POST['contactname']) == '') {
+		$hasError = true;
+	} else {
+		$name = trim($_POST['contactname']);
+	}
+
+	//Check to make sure that the subject field is not empty
+	if(trim($_POST['subject']) == '') {
+		$hasError = true;
+	} else {
+		$subject = trim($_POST['subject']);
+	}
+
+
+	//Check to make sure sure that a valid email address is submitted
+	if(trim($_POST['email']) == '')  {
+		$hasError = true;
+	} else if (!preg_match('/^[_a-zA-Z0-9-]+(\.[_a-zA-Z0-9-]+)*@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)+$/', trim($_POST['email']))) {
+		$hasError = true;
+	} else {
+		$email = trim($_POST['email']);
+	}
+
+	//Check to make sure comments were entered
+	if(trim($_POST['message']) == '') {
+		$hasError = true;
+	} else {
+		if(function_exists('stripslashes')) {
+			$comments = stripslashes(trim($_POST['message']));
+		} else {
+			$comments = trim($_POST['message']);
+		}
+	}
+
+	//If there is no error, send the email
+	if(!isset($hasError)) {
+		$emailTo = 'contact@optimino.com'; //Put your own email address here
+		$body = "Name: $name \n\nEmail: $email \n\nSubject: $subject \n\nComments:\n $comments";
+		$headers = 'From: Optimino Website <'.$emailTo.'>' . "\r\n" . 'Reply-To: ' . $email;
+
+		mail($emailTo, $subject, $body, $headers);
+		$emailSent = true;
+	}
+}
+?>
 <!DOCTYPE html>
 <!--[if lt IE 9]><html class="no-js ie" lang="en"><![endif]-->
 <!--[if IE 9]><html class="no-js ie9" lang="en"><![endif]-->
@@ -94,8 +144,12 @@
 	</div>
 	<div id="logo-top-scrolled"></div>
 	<div id="positioning-statement">
-    	<p><strong>We focus exclusively on <span class="focus">UX</span>, <span class="focus">UI</span>, <span class="focus">Prototyping</span>, and <span class="focus">Design</span> so your team can focus on the rest.</strong></p>
-		<p class="sub">Optimino is located in the New York metro-area and are very open to face-to-face meetings as an initial introduction. Write us at <a href="mailto:contact@optimino.com">contact@optimino.com</a></p>
+		<div class="container">
+			<h4>About Us</h4>
+    		<h5>We focus exclusively on <span class="focus">UX</span>, <span class="focus">UI</span>, <span class="focus">Prototyping</span>, and <span class="focus">Design</span> so your team can focus on the rest.</h5>
+			<p class="sub">Optimino was started by Timothy Jaeger (LinkedIn profile <a href-"#">here</a>) with one mission: to help large companies capture the hearts and minds of users through amazing, informed product design. We believe that to effectively scale and grow you need data-informed product and service design.</p> <p class="sub"><span>We strive to work on the hardest business challenges facing companies today.</span> We are here to help. We love to work.</p>
+			<p class="sub">Write us at <a href="mailto:contact@optimino.com">contact@optimino.com</a> or <a href="#contact">fill in the form below</a>.</p>
+		</div>
 	</div>
 	<div id="clients" class="gradient">
 		<div class="container">
@@ -152,6 +206,47 @@
 			</ul>
 		</div>
 	</div>
+	<div id="contact">
+		<div id="contactWrapper" class="container" role="form">
+		<h4>Contact</h4>
+		<?php if(isset($hasError)) { //If errors are found ?>
+			<p class="error">Please check if you've filled all the fields with valid information and try again. Thank you.</p>
+		<?php } ?>
+
+		<?php if(isset($emailSent) && $emailSent == true) { //If email is sent ?>
+			<div class="success">
+				<p>Email Successfully Sent!</p>
+				<p>Thank you for using our contact form <strong><?php echo $name;?></strong>! Your email was successfully sent and we 'll be in touch with you soon.</p>
+			</div>
+		<?php } ?>
+
+		<form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>#contact" id="contactform">
+			<div class="stage clear">
+				<label for="name">Name: <em>*</em></label>
+				<input type="text" name="contactname" id="contactname" value="" class="required" role="input" aria-required="true" />
+			</div>
+
+			<div class="stage clear">
+				<label for="email">Email: <em>*</em></label>
+				<input type="text" name="email" id="email" value="" class="required email" role="input" aria-required="true" />
+			</div>
+
+			<div class="stage clear">
+				<label for="subject">Subject: <em>*</em></label>
+				<input type="text" name="subject" id="subject" value="" class="required" role="input" aria-required="true" />
+			</div>
+
+			<div class="stage clear">
+				<label for="message">Message: <em>*</em></label>
+				<textarea rows="8" name="message" id="message" class="required" role="textbox" aria-required="true"></textarea>
+			</div>
+								
+			<p class="requiredNote"><em>*</em> Denotes a required field.</p>
+			
+			<input type="submit" value="Send Message" name="submit" id="submitButton" title="Click here to submit your message!" />
+		</form>
+		</div>
+	</div>
   </article>
   <footer>
 	<p>(c) 2013 Optimino LLC. All rights reserved. Get in touch with us: <a href="mailto:contact@optimino.com">contact@optimino.com</a></p>
@@ -169,12 +264,55 @@
 				});
 		    }
 			
-		
 		});
 		
 		$('#fixed-header').scrollToFixed();
 		
 		$('#nav-wrapper a').smoothScroll(1000);
+		
+		// validate signup form on keyup and submit
+		var validator = $("#contactform").validate({
+			rules: {
+				contactname: {
+					required: true,
+					minlength: 2
+				},
+				email: {
+					required: true,
+					email: true
+				},
+				subject: {
+					required: true,
+					minlength: 2
+				},
+				message: {
+					required: true,
+					minlength: 10
+				}
+			},
+			messages: {
+				contactname: {
+					required: "Please enter your name",
+					minlength: jQuery.format("Your name needs to be at least {0} characters")
+				},
+				email: {
+					required: "Please enter a valid email address",
+					minlength: "Please enter a valid email address"
+				},
+				subject: {
+					required: "You need to enter a subject!",
+					minlength: jQuery.format("Enter at least {0} characters")
+				},
+				message: {
+					required: "You need to enter a message!",
+					minlength: jQuery.format("Enter at least {0} characters")
+				}
+			},
+			// set this class to error-labels to indicate valid fields
+			success: function(label) {
+				label.addClass("checked");
+			}
+		});
 		
 		//$('#fixed-header').waypoint('sticky');
 		
