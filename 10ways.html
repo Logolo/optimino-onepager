@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="no-js ie" lang="en"><![endif]-->
+<!--[if IE 9]><html class="no-js ie9" lang="en"><![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Optimino</title>
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet/less" type="text/css" href="css/scale.less" />
+  <link rel="stylesheet/less" type="text/css" href="css/optimino.less" />
+  <script src="js/libs/modernizr-2.0.6.min.js"></script>
+  <script src="js/libs/jquery-1.9.1.min.js"></script>
+  <script src="js/libs/waypoints.min.js"></script>
+  <script src="js/libs/less-1.3.3.min.js" type="text/javascript"></script>
+  <script src="js/libs/jquery-scrolltofixed-min.js" type="text/javascript"></script>
+  <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=PT+Serif:700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
+</head>
+<body>	
+  <article>
+	<div id="fixed-header">
+		<img src="img/optimino-logo.png" />
+		<span id="header-logos">
+			<a href="#"><img src="img/twitter-logo.png" /></a>
+			<a href="#"><img src="img/facebook-logo.png" /></a>
+		</span>
+	</div>
+	<div id="work-together">
+		<p>We might be able to work together! <a href="#">Do you have any of these UX pain points?</a> Do any of these apply to your business?</p>
+		<div id="points">
+			  <div class="point">
+		      	<div class="description"><p>Our competitors are crushing us - we just don't have the talent on staff to match their momentum.</p>
+				<span class="detail">It can be difficult to staff up quickly, especially when it comes to User Experience. In the time it will take to hire and on-board talent we will have the work completed. The choice is yours.</span>
+			</div>
+		       <div class="action">
+		       	  <a href="#">Yes</a>
+		       </div>
+		      </div>
+		      <div class="point">
+		      	<div class="description"><p>We want more insight into our users - their demographics, habits, and usage patterns.</p>
+				<span class="detail"><strong>You are not the user.</strong> Often-said but under internalized, let Optimino provide your business with detailed Personas about your users - so you can build products and services that serve their needs</span>
+			</div>
+		       <div class="action">
+		       	  <a href="#">Yes</a>
+		       </div>
+		      </div>
+		      <div class="point">
+		      	<div class="description"><p>None of our sites works on mobile or tablets - and that's a big problem.</p>
+					<span class="detail">This is the age of responsive design - if your users can't navigate your site on various tablets and smartphones then you are in trouble. Let us figure out a mobile workflow solution for your business.'</span>
+				</div>
+		       <div class="action">
+		       	  <a href="#">Yes</a>
+		       </div>
+		      </div>
+		      <div class="point">
+		      	<div class="description"><p>Certain KPIs are not being met.</p>
+					<span class="detail">Just because your developers can 'make it so' doesn't guarantee the results you are seeking. <strong>Rockstar developers don't create results, users do</strong>. Let us understand your Key Performance Indiciators and provide a realistic solution for them to be met.</span>
+				</div>
+		       <div class="action">
+		       	  <a href="#">Yes</a>
+		       </div>
+		      </div>
+		      <div class="point">
+		      	<div class="description"><p>The business doesn't understand tech and vice-versa.</p>
+			   	<span class="detail">When business and tech can't communicate effectively various problems arise. Optimino can setup an agile waterfall UX strategy to help your teams reach their peak performance.</span>
+			   </div>
+		       <div class="action">
+		       	  <a href="#">Yes</a>
+		       </div>
+		      </div>
+		      <div class="point">
+		      	<div class="description"><p>We don't have the expertise to rapidly prototype and share ideas that could make a difference in our business.</p>
+				<span class="detail">Do you have ideas you wish you could quickly investigate to see which will work? Let us rapidly prototype products and feature sets that can be passed between departments to kick-start discussions and feasability.</span>
+				</div>
+		       <div class="action">
+		       	  <a href="#">Yes</a>
+		       </div>
+		      </div>
+		      <div class="point">
+		      	<div class="description"><p>We don't know whether to build native iPhone or Android apps or just make mobile web products.</p>
+				<span class="detail">Optimino can provide you with an audit of the effectiveness of each solution - our team members have built both native and web apps and provide a 'been there, done that' perspective that can be beneficial to your business.</span>
+			</div>
+		       <div class="action">
+		       	  <a href="#">Yes</a>
+		       </div>
+		      </div>
+		      <div class="point">
+		      	<div class="description"><p>We want to drive our users to purchase more products on our site quickly and efficiently.</p>
+				<span class="detail">Let us understand the bottlenecks in your e-commerce platform and come up with meaningful UX and metrics to increase user conversion and checkout.</span>
+			</div>
+		       <div class="action">
+		       	  <a href="#">Yes</a>
+		       </div>
+		      </div>
+		      <div class="point">
+		      	<div class="description"><p>I keep hearing about this 'UX' thing and figure I need a UX Designer but don't know what that means, where to find one, or what makes a good one.</p>
+				<span class="detail">UX Designers are in high demand right now. Good ones are hard to find and difficult to evaluate. Let Optimino be your strategic partner in building your in-house UX team - including hiring, training, and on-boarding your UX employees.</span>
+				</div>
+		       <div class="action">
+		       	  <a href="#">Yes</a>
+		       </div>
+		      </div>
+		</div>
+	</div>
+  </article>
+  <script type="text/javascript">
+	$(document).ready(function() {
+		
+		$(window).scroll(function() {
+		    var y_scroll_pos = window.pageYOffset;
+		    var scroll_pos_test = 150;             // set to whatever you want it to be
+
+		    if(y_scroll_pos > scroll_pos_test) {
+		        $("#fixed-header").waypoint(function(){
+				    $(this).fadeIn(750);
+				});
+		    }
+			
+		
+		});
+		
+		$('#fixed-header').scrollToFixed();
+		
+		//$('#fixed-header').waypoint('sticky');
+		
+		/*
+		
+		$("#fixed-header").waypoint(function(){
+		    $(this).waypoint('sticky');
+		},{
+		    offset: 'bottom-in-view'
+		});
+		*/
+		
+	});
+  </script>
+  <script src="js/scripts.js"></script>
+	<!--[if gte IE 9]>
+	  <style type="text/css">
+	    .gradient {
+	       filter: none;
+	    }
+	  </style>
+	<![endif]-->
+</body>
+</html>
