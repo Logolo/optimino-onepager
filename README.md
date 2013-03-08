@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Scale.css
 ### Mobile first boilerplate focusing on readability
 
@@ -107,3 +108,9 @@ Want to do a pull request?
 ======
 
 Great! New ideas are more than welcome, but please check the [Pull Request Guidelines](https://github.com/viljamis/Scale/wiki/Pull-Request-Guidelines) first before doing so.
+=======
+optimino-onepager
+=================
+
+One page landing page for my company
+>>>>>>> cb185e80da632c9801d06c51fd90d9862f11b67b
