@@ -7,6 +7,7 @@
 @main-padding:15px;
 @container-padding:0em 3em;
 
+
 #fixed-header {
 	background-color:#000;
 	color:#fff;
@@ -14,6 +15,12 @@
 	/* padding:0px 20px; */
 	text-align:left;
 	overflow:auto;
+	
+	a {
+		border-bottom:0px solid #fff;
+		overflow:hidden;
+	}
+	
 	img {
 		margin:0 auto;
 		padding-top:10px;
@@ -381,7 +388,7 @@
 		background-color:rgba(255, 0, 0, 0.7);
 		position:absolute;
 		text-align:left;
-		top:50px;
+		top:23px;
 		width:500px;
 		left:50px;
 	}
@@ -390,7 +397,7 @@
 		background-color:rgba(54,158,231,0.7);
 		position:absolute;
 		text-align:left;
-		top:187px;
+		top:138px;
 		width:500px;
 		left:50px;
 	}
@@ -431,10 +438,12 @@ nav ul {
 	li {
 		display:inline-block;
 		margin-right:10px;
-		padding:10px 10px;
 		a {
 			border-bottom:0px solid #fff;
 			color:#d8d8d8;
+			display:inline-block;
+			height:28px;
+			padding:10px;
 		}
 		a:hover {
 			color:#fff;

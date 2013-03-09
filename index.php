@@ -74,7 +74,7 @@ if(isset($_POST['submit'])) {
 <body>	
   <article>
 	<div id="fixed-header">
-		<img src="img/optimino-logo.png" class="optimino-logo" />
+		<a href="#nav-wrapper"><img src="img/optimino-logo.png" class="optimino-logo" /></a>
 		<span id="header-logos">
 			<a href="#"><img src="img/twitter-logo.png" class="twitter" /></a>
 			<a href="#"><img src="img/facebook-logo.png" class="facebook" /></a>
