@@ -211,13 +211,22 @@ if(isset($_POST['submit'])) {
 		<h4>Contact</h4>
 		<?php if(isset($hasError)) { //If errors are found ?>
 			<p class="error">Please check if you've filled all the fields with valid information and try again. Thank you.</p>
+			<script type="text/javascript">
+			
+			$('.error').delay(3000).fadeOut("slow");
+			
+			</script>
 		<?php } ?>
 
 		<?php if(isset($emailSent) && $emailSent == true) { //If email is sent ?>
 			<div class="success">
-				<p>Email Successfully Sent!</p>
-				<p>Thank you for using our contact form <strong><?php echo $name;?></strong>! Your email was successfully sent and we 'll be in touch with you soon.</p>
+				<p>Email Successfully Sent! We'll be in touch shortly!</p>
 			</div>
+			<script type="text/javascript">
+			
+			$('.success').delay(3000).fadeOut("slow");
+			
+			</script>
 		<?php } ?>
 
 		<form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>#contact" id="contactform">
