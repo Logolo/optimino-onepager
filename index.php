@@ -72,10 +72,20 @@ if(isset($_POST['submit'])) {
   <link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
 </head>
 <body>	
+  	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>	
   <article>
 	<div id="fixed-header">
 		<a href="#nav-wrapper"><img src="img/optimino-logo.png" class="optimino-logo" /></a>
 		<span id="header-logos">
+			<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.optimino.com" data-text="Optimino - User Experience Strategy &amp; Design" data-via="optimino">Tweet</a>
+			<div class="fb-like" data-href="http://www.optimino.com" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true"></div>
 			<a href="#"><img src="img/twitter-logo.png" class="twitter" /></a>
 			<a href="#"><img src="img/facebook-logo.png" class="facebook" /></a>
 			<a href="mailto:contact@optimino.com"><img src="img/mail-icon.png" class="mail" /></a>
@@ -336,6 +346,7 @@ if(isset($_POST['submit'])) {
 		
 	});
   </script>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
   <script src="js/scripts.js"></script>
 	<!--[if gte IE 9]>
 	  <style type="text/css">
