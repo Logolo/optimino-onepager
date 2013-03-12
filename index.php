@@ -57,8 +57,13 @@ if(isset($_POST['submit'])) {
   <title>Optimino</title>
   <meta name="author" content="">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!--[if !IE]>-->
   <link rel="stylesheet/less" type="text/css" href="css/scale.less" />
+  <!--<![endif]-->
   <link rel="stylesheet/less" type="text/css" href="css/optimino.less" />
+  <!--[if IE]>
+  <link rel="stylesheet" type="text/css" href="css/ie8.less" />
+  <![endif]-->
   <script src="js/libs/modernizr-2.0.6.min.js"></script>
   <script src="js/libs/jquery-1.9.1.min.js"></script>
   <script src="js/libs/waypoints.min.js"></script>
