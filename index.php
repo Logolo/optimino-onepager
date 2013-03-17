@@ -49,7 +49,7 @@ if(isset($_POST['submit'])) {
 }
 ?>
 <!DOCTYPE html>
-<!--[if lt IE 9]><html class="no-js ie" lang="en"><![endif]-->
+<!--[if lt IE 9]><html class="no-js" lang="en"><![endif]-->
 <!--[if IE 9]><html class="no-js ie9" lang="en"><![endif]-->
 <!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
@@ -62,7 +62,7 @@ if(isset($_POST['submit'])) {
   <!--<![endif]-->
   <link rel="stylesheet/less" type="text/css" href="css/optimino.less" />
   <!--[if IE]>
-  <link rel="stylesheet" type="text/css" href="css/ie8.less" />
+  <link rel="stylesheet" type="text/css" href="css/ie8.css" />
   <![endif]-->
   <script src="js/libs/modernizr-2.0.6.min.js"></script>
   <script src="js/libs/jquery-1.9.1.min.js"></script>
@@ -87,7 +87,9 @@ if(isset($_POST['submit'])) {
 	}(document, 'script', 'facebook-jssdk'));</script>	
   <article>
 	<div id="fixed-header">
-		<a href="#nav-wrapper"><img src="img/optimino-logo.png" class="optimino-logo" /></a>
+		<a href="#nav-wrapper">
+			<img src="img/optimino-logo.png" class="optimino-logo" />
+		</a>
 		<span id="header-logos">
 			<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.optimino.com" data-text="Optimino - User Experience Strategy &amp; Design" data-via="optimino">Tweet</a>
 			<div class="fb-like" data-href="http://www.optimino.com" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true"></div>
@@ -108,6 +110,7 @@ if(isset($_POST['submit'])) {
 	</nav>
 	<div id="company-statement">
 		<h2>Optimino is a User Experience Strategy & Design consultancy.</h2><h3>We work with large, Fortune 500 companies on building and improving their products, platforms, and ecosystems.</h3>
+	 <img src="img/wireframe-bg2.jpg" height="300" class="company-img">
 	</div>
 	<div id="services">
 		<div class="container">
@@ -162,13 +165,13 @@ if(isset($_POST['submit'])) {
 		<div class="container">
 			<h4>About Us</h4>
     		<h5>We focus exclusively on <span class="focus">UX</span>, <span class="focus">UI</span>, <span class="focus">Prototyping</span>, and <span class="focus">Design</span> so your team can focus on the rest.</h5>
-			<p class="sub">Optimino was started by Timothy Jaeger (LinkedIn profile <a href-"#">here</a>) with one mission: to help large companies capture the hearts and minds of users through amazing, informed product design. We believe that to effectively scale and grow you need data-informed product and service design.</p> <p class="sub"><span>We strive to work on the hardest business challenges facing companies today.</span> We are here to help. We love to work.</p>
+			<p class="sub">Optimino was started by Timothy Jaeger (LinkedIn profile <a href-"#">here</a>) with one mission: to help large companies capture the hearts and minds of users through amazing, informed product design. We believe that to effectively scale and grow companies need data-informed product and service design.</p> <p class="sub"><span>We strive to work on the hardest business challenges facing companies today.</span> We are here to help. We love to work.</p>
 			<p class="sub">Write us at <a href="mailto:contact@optimino.com">contact@optimino.com</a> or <a href="#contact">fill in the form below</a>.</p>
 		</div>
 	</div>
 	<div id="clients" class="gradient">
 		<div class="container">
-			<h4>Our Clients</h4>
+			<h4>Companies we've worked with</h4>
 			<div id="logos">
 				<ul>
 					<li><img class="logo" src="img/emc.png" /></li>
@@ -293,6 +296,8 @@ if(isset($_POST['submit'])) {
 		$('#fixed-header').scrollToFixed();
 		
 		$('#nav-wrapper a').smoothScroll(1000);
+		
+		$('nav').prev().css('height', '57');
 		
 		// validate signup form on keyup and submit
 		var validator = $("#contactform").validate({
