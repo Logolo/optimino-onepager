@@ -176,6 +176,7 @@ if(isset($_POST['submit'])) {
 				<ul>
 					<li><img class="logo" src="img/emc.png" /></li>
 					<li><img class="logo" src="img/merrill-lynch.png"></li>
+					<li><img class="logo" src="img/aurionpro-logo.png"></li>
 					<li><img class="logo" src="img/company-here.png"></li>
 				</ul>
 			</div>
