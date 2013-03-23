@@ -158,7 +158,7 @@ article .twitter-share-button {
 	/* font-size:30px;
 	*/
 	/* text-align:center; */
-	background-color:#CACCC9;
+	background-color:#fff;
 	color:#333;
 	width:auto;
 	
@@ -324,6 +324,7 @@ article .twitter-share-button {
 	overflow:auto;
 	font-family: 'Lato', sans-serif;
 	padding:@main-padding;
+	position:relative;
 	
 	p.error {
 		background-color:#C01D11;
@@ -381,7 +382,7 @@ article .twitter-share-button {
 			background-color:#000;
 			color:#fff;
 			width:auto;
-			padding:10px;
+			padding:10px 30px;
 			margin-left:220px;
 		}
 	}
@@ -406,7 +407,7 @@ article .twitter-share-button {
 	}
 	
 	h2 {
-		background-color:rgba(255, 0, 0, 0.7);
+		background-color:rgba(255, 0, 0, 0.9);
 		position:absolute;
 		text-align:left;
 		top:23px;
@@ -415,12 +416,62 @@ article .twitter-share-button {
 	}
 	
 	h3 {
-		background-color:rgba(54,158,231,0.7);
+		background-color:rgba(54,158,231,0.9);
 		position:absolute;
 		text-align:left;
 		top:138px;
 		width:500px;
 		left:50px;
+	}
+}
+
+#where-we-are {
+	position:absolute;
+	top:80px;
+	left:760px;
+	width:330px;
+	font-family: 'Arvo', serif;
+	background-color:#55a6f2;
+	padding:10px;
+	
+	h3 {
+		color:#fff;
+		font-size:1.2em;
+		background:none;
+		padding:0px;
+		font-family: 'Arvo', serif;
+	}
+	
+	.clear {
+		clear:both;
+		display:block;
+		height:20px;
+	}
+	
+	.sidebar {
+		float:left;
+		width:40px;
+	}
+	
+	.main-text {
+		float:left;
+		overflow:hidden;
+		color:#333;
+		width:280px;
+		margin-left:5px;
+		
+		p {
+			margin:0;
+			
+			span {
+				color:#efefef;
+			}
+		}
+	}
+	
+	img {
+		float:left;
+		margin:0;
 	}
 }
 
@@ -459,6 +510,10 @@ nav ul {
 	li {
 		display:inline-block;
 		margin-right:10px;
+		opacity: .5;
+		transition: opacity .25s ease-in-out;
+		   -moz-transition: opacity .25s ease-in-out;
+		   -webkit-transition: opacity .25s ease-in-out;
 		a {
 			border-bottom:0px solid #fff;
 			color:#d8d8d8;
@@ -474,6 +529,7 @@ nav ul {
 	}
 	li:hover {
 		background-color:#ff2642;
+		opacity: 1;
 	}
 }
 

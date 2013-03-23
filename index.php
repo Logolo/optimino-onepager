@@ -75,6 +75,7 @@ if(isset($_POST['submit'])) {
   <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=PT+Serif:700' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>	
   	<div id="fb-root"></div>
@@ -109,50 +110,50 @@ if(isset($_POST['submit'])) {
 		</div>
 	</nav>
 	<div id="company-statement">
-		<h2>Optimino is a User Experience Strategy & Design consultancy.</h2><h3>We work with large, Fortune 500 companies on building and improving their products, platforms, and ecosystems.</h3>
+		<h2>Optimino is a User Experience Strategy & Design consultancy.</h2><h3>We work with large companies on building and improving their products, platforms, and ecosystems.</h3>
 	 <img src="img/wireframe-bg2.jpg" height="300" class="company-img">
 	</div>
 	<div id="services">
 		<div class="container">
 			<h4>Our Services</h4>
 				<div class="row">
-					<div class="service-image"><img class="logo" src="img/icon-ux.png" /></div>
+					<div class="service-image"><img class="logo" src="img/icon-ux2.png" /></div>
 					<div class="service-description">
 						<h5>User Experience (UX) Design</h5>
 						<p>We can create an easy, pleasurable way your users will accomplish your business goals. Our take on UX design incorporates both waterfall and agile approaches, and can be used to create from scratch or improve your product or service.</p>
 					</div>
-					<div class="service-image"><img class="logo" src="img/icon-ia.png" /></div>
+					<div class="service-image"><img class="logo" src="img/icon-ia2.png" /></div>
 					<div class="service-description">
 						<h5>Information Architecture</h5>
 						<p>Once we understand your business objectives we can create the Information Architecture (IA) for your product or service, expertly crafting user flows, wireframes, and annotations. These will form the structure for both content and interactions.</p>
 					</div>
 				</div>
 				<div class="row">
-					<div class="service-image"><img class="logo" src="img/icon-training.png" /></div>
+					<div class="service-image"><img class="logo" src="img/icon-training2.png" /></div>
 					<div class="service-description">
 						<h5>Agile UX Training</h5>
 						<p>We can help jump-start your organization's agile, lean UX methodology. Our training will help bring your UXers, developers, visual designers and product managers up to speed with the latest techniques to help you reach maximum efficiency.</p>
 					</div>
-					<div class="service-image"><img class="logo" src="img/icon-prototype.png" /></div>
+					<div class="service-image"><img class="logo" src="img/icon-prototype2.png" /></div>
 					<div class="service-description">
 						<h5>Rapid Prototyping</h5>
 						<p>Rapid Prototyping is getting your ideas into the hands of both actual users and business stakeholders - and fast. We can create mobile and web-based prototypes that mimic both native and non-native apps for almost any platform - including iPhone, iPad, Android - even console games.</p>
 					</div>
 				</div>
 				<div class="row">
-					<div class="service-image"><img class="logo" src="img/icon-ui.png" /></div>
+					<div class="service-image"><img class="logo" src="img/icon-ui2.png" /></div>
 					<div class="service-description">
 						<h5>UI Design</h5>
 						<p>We can create an elegant UI for your application - we can create everything from Metro (flat) style UIs to more complex skeumorphic techniques.</p>
 					</div>
-					<div class="service-image"><img class="logo" src="img/icon-userresearch.png" /></div>
+					<div class="service-image"><img class="logo" src="img/icon-userresearch2.png" /></div>
 					<div class="service-description">
 						<h5>User Research</h5>
 						<p>We conduct both online, field, and office-based research to help you understand the usage patterns and pain points of your target user base. We can map their behavior and make recommendations based on our findings.</p>
 					</div>
 				</div>
 				<div class="row">
-					<div class="service-image"><img class="logo" src="img/icon-kpis.png" /></div>
+					<div class="service-image"><img class="logo" src="img/icon-kpis2.png" /></div>
 					<div class="service-description">
 						<h5>KPIs / Metrics</h5>
 						<p>We use data-driven techniques to monitor and make sense of your metrics - allow us to integrate our findings from real into your agile or waterfall-based timelines. Using tools like <strong>Google Analytics</strong>, <strong>Kissmetrics</strong>, and <strong>Chartbeat</strong> gives us a strong insight into your product.</p>
@@ -165,7 +166,7 @@ if(isset($_POST['submit'])) {
 		<div class="container">
 			<h4>About Us</h4>
     		<h5>We focus exclusively on <span class="focus">UX</span>, <span class="focus">UI</span>, <span class="focus">Prototyping</span>, and <span class="focus">Design</span> so your team can focus on the rest.</h5>
-			<p class="sub">Optimino was started by Timothy Jaeger (LinkedIn profile <a href-"#">here</a>) with one mission: to help large companies capture the hearts and minds of users through amazing, informed product design. We believe that to effectively scale and grow companies need data-informed product and service design.</p> <p class="sub"><span>We strive to work on the hardest business challenges facing companies today.</span> We are here to help. We love to work.</p>
+			<p class="sub">Optimino was started by <a href-"#">Timothy Jaeger</a> with one mission: to help large companies create better user engagements through informed product design.</p>
 			<p class="sub">Write us at <a href="mailto:contact@optimino.com">contact@optimino.com</a> or <a href="#contact">fill in the form below</a>.</p>
 		</div>
 	</div>
@@ -273,6 +274,29 @@ if(isset($_POST['submit'])) {
 			
 			<input type="submit" value="Send Message" name="submit" id="submitButton" title="Click here to submit your message!" />
 		</form>
+		<div id="where-we-are">
+			<h3>We are</h3>
+			<div class="sidebar">
+				<img src="img/clock.png" />
+			</div>
+			<div class="main-text">
+				<p>45 minutes away from <span>New York City</span>, most parts of <span>New Jersey</span>, and <span>Philadelphia</span>.</p>
+			</div>
+			<div class="clear"></div>
+			<div class="sidebar">
+				<img src="img/phone.png" />
+			</div>
+			<div class="main-text">
+				<p>Reachable by phone: <span>888-888-8888</span></p>
+			</div>
+			<div class="clear"></div>
+			<div class="sidebar">
+				<img src="img/skype.png" />
+			</div>
+			<div class="main-text">
+				<p>On Skype - talk with us at <span>optimino</span></p>
+			</div>
+		</div>
 		</div>
 	</div>
   </article>
