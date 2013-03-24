@@ -54,7 +54,7 @@ if(isset($_POST['submit'])) {
 <!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Optimino</title>
+  <title>Optimino - New York Metro-Area User Experience (UX) Strategy & Design Consultancy</title>
   <meta name="author" content="">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <!--[if !IE]>-->
@@ -97,7 +97,7 @@ if(isset($_POST['submit'])) {
 			<div class="fb-like" data-href="http://www.optimino.com" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true"></div>
 			<div id="header-social">
 				<a href="https://twitter.com/optimino" target="_blank"><img src="img/twitter-logo2.png" class="twitter" /></a>
-				<a href="#" target="_blank"><img src="img/facebook-logo2.png" class="facebook" /></a>
+				<a href="https://www.facebook.com/pages/Optimino/390172884432153" target="_blank"><img src="img/facebook-logo2.png" class="facebook" /></a>
 				<a href="mailto:contact@optimino.com"><img src="img/mail-icon2.png" class="mail" /></a>
 			</div>
 		</span>
@@ -114,49 +114,49 @@ if(isset($_POST['submit'])) {
 	</nav>
 	<div id="company-statement">
 		<h2>Optimino is a User Experience Strategy & Design consultancy.</h2><h3>We work with large companies on building and improving their products, platforms, and ecosystems.</h3>
-	 <img src="img/grey.gif" data-original="img/wireframe-bg2.jpg" height="300" class="company-img lazy">
+	 <img src="img/wireframe-bg2.jpg" height="300" class="company-img">
 	</div>
 	<div id="services">
 		<div class="container">
 			<h4>Our Services</h4>
 				<div class="row">
-					<div class="service-image"><img class="logo lazy" src="img/grey.gif" data-original="img/icon-ux3.png" /></div>
+					<div class="service-image"><img class="logo" src="img/icon-ux3.png" /></div>
 					<div class="service-description">
 						<h5>User Experience (UX) Design</h5>
 						<p>We can create and optimize pathwasy for users to accomplish your business goals. Our approach to UX design incorporates both waterfall and agile approaches.</p>
 					</div>
-					<div class="service-image"><img class="logo lazy" src="img/grey.gif" data-original="img/icon-ia3.png" /></div>
+					<div class="service-image"><img class="logo" src="img/icon-ia3.png" /></div>
 					<div class="service-description">
 						<h5>Information Architecture</h5>
 						<p>Once we understand your business objectives we can create the Information Architecture (IA) for your product or service, expertly crafting user flows, wireframes, and annotations. These will form the structure for both content and interactions.</p>
 					</div>
 				</div>
 				<div class="row">
-					<div class="service-image"><img class="logo lazy" src="img/grey.gif" data-original="img/icon-training3.png" /></div>
+					<div class="service-image"><img class="logo" src="img/icon-training3.png" /></div>
 					<div class="service-description">
 						<h5>Agile UX Training</h5>
 						<p>We offer Agile UX training to jump-start your organization into one of 'continuous innovation'. Our training will help bring your UXers, developers, visual designers and product managers up to speed with the latest techniques to help you reach maximum efficiency.</p>
 					</div>
-					<div class="service-image"><img class="logo lazy" src="img/grey.gif" data-original="img/icon-prototype3.png" /></div>
+					<div class="service-image"><img class="logo" src="img/icon-prototype3.png" /></div>
 					<div class="service-description">
 						<h5>Rapid Prototyping</h5>
 						<p>Rapid Prototyping involves getting your ideas into the hands of both actual users and business stakeholders as quickly as possible in order to get feedback. We can create mobile and web-based prototypes that mimic both native and non-native apps for almost any platform - including iPhone, iPad, Android - even console games.</p>
 					</div>
 				</div>
 				<div class="row">
-					<div class="service-image"><img class="logo lazy" src="img/grey.gif" data-original="img/icon-ui3.png" /></div>
+					<div class="service-image"><img class="logo" src="img/icon-ui3.png" /></div>
 					<div class="service-description">
 						<h5>UI and Responsive Design</h5>
 						<p>We can create an elegant UI for your application - everything from Metro (flat) style UIs to more complex skeumorphic techniques are all doable.</p>
 					</div>
-					<div class="service-image"><img class="logo lazy" src="img/grey.gif" data-original="img/icon-userresearch3.png" /></div>
+					<div class="service-image"><img class="logo" src="img/icon-userresearch3.png" /></div>
 					<div class="service-description">
 						<h5>User Research</h5>
 						<p>We conduct both online, field, and office-based research to help you understand the usage patterns and pain points of your target user base. We can map their behavior and make recommendations based on our findings.</p>
 					</div>
 				</div>
 				<div class="row">
-					<div class="service-image"><img class="logo lazy" src="img/grey.gif" data-original="img/icon-kpis3.png" /></div>
+					<div class="service-image"><img class="logo" src="img/icon-kpis3.png" /></div>
 					<div class="service-description">
 						<h5>KPIs / Metrics</h5>
 						<p>We use data-driven techniques to monitor and make sense of your metrics - allow us to integrate our findings into your agile or waterfall-based timelines. Using tools such as <strong>Google Analytics</strong>, <strong>Kissmetrics</strong>, and <strong>Chartbeat</strong> give us a strong insight into your product or service.</p>
@@ -172,21 +172,21 @@ if(isset($_POST['submit'])) {
 			<div id="why-us">
 				<h6>Why choose us</h6>
 				<div class="why-us-icon">
-					<img class="lazy" src="img/grey.gif" data-original="img/icon-hermes.png" />
+					<img src="img/icon-hermes.png" />
 					<span class="why-text">We're Fast</span>
 					<div class="why-us-description">
 						<p>We pride ourselves on being quick to deliver results. Oftentimes the same day as the project starts! We aim to iterate fast and can work with your team's existing tech stack, whether it's Sharepoint, Git, or Dropbox.</p>
 					</div>
 				</div>
 				<div class="why-us-icon">
-					<img class="lazy" src="img/grey.gif" data-original="img/icon-chart.png" />
+					<img src="img/icon-chart.png" />
 					<span class="why-text">We Measure Everything</span>
 					<div class="why-us-description">
 						<p>There's an old saying about opinions...we prefer to measure our output and recommendations by your data. Show us usage trends and we can deliver better results that are informed by your data.</p>
 					</div>
 				</div>
 				<div class="why-us-icon last">
-					<img class="lazy" src="img/grey.gif" data-original="img/icon-specialized.png" />
+					<img src="img/icon-specialized.png" />
 					<span class="why-text">We're Specialized</span>
 					<div class="why-us-description">
 						<p>We are laser-focused on the user experience. Because we are so specialized we can work alongside your marketers, developers, and business analysts to identify areas of improvement for redesign initiatives, weekly sprints, and retainer-based engagements.</p>
@@ -203,10 +203,10 @@ if(isset($_POST['submit'])) {
 			<h4>Companies we've worked with</h4>
 			<div id="logos">
 				<ul>
-					<li><img class="logo lazy" src="img/grey.gif" data-original="img/emc.png" /></li>
-					<li><img class="logo lazy" src="img/grey.gif" data-original="img/merrill-lynch.png"></li>
-					<li><img class="logo lazy" src="img/grey.gif" data-original="img/aurionpro-logo.png"></li>
-					<li><img class="logo lazy" src="img/grey.gif" data-original="img/company-here.png"></li>
+					<li><img class="logo" src="img/emc.png" /></li>
+					<li><img class="logo" src="img/merrill-lynch.png"></li>
+					<li><img class="logo" src="img/aurionpro-logo.png"></li>
+					<li><img class="logo" src="img/company-here.png"></li>
 				</ul>
 			</div>
 		</div>
@@ -216,39 +216,39 @@ if(isset($_POST['submit'])) {
 			<h4>Software we regularly use</h4>
 			<ul>
 				<li>
-					<div class="software-logo"><img class="lazy" src="img/grey.gif" data-original="img/omnigraffle.png" /></div>
+					<div class="software-logo"><img src="img/omnigraffle.png" /></div>
 					<div class="software-text"><p>Wireframing</p></div>
 				</li>
 				<li>
-					<div class="software-logo"><img class="lazy" src="img/grey.gif" data-original="img/trello.png" /></div>
+					<div class="software-logo"><img src="img/trello.png" /></div>
 					<div class="software-text"><p>Product Management</p></div>
 				</li>
 				<li>
-					<div class="software-logo"><img class="lazy" src="img/grey.gif" data-original="img/axure.png" /></div>
+					<div class="software-logo"><img src="img/axure.png" /></div>
 					<div class="software-text"><p>Prototyping</p></div>
 				</li>	
 				<li>
-					<div class="software-logo"><img class="lazy" src="img/grey.gif" data-original="img/jquery.png" /></div>
+					<div class="software-logo"><img src="img/jquery.png" /></div>
 					<div class="software-text"><p>Development / Prototyping</p></div>
 				</li>
 				<li>
-					<div class="software-logo"><img class="lazy" src="img/grey.gif" data-original="img/photoshop.png" /></div>
+					<div class="software-logo"><img src="img/photoshop.png" /></div>
 					<div class="software-text"><p>Design</p></div>
 				</li>
 				<li>
-					<div class="software-logo"><img class="lazy" src="img/grey.gif" data-original="img/google-analytics.png" /></div>
+					<div class="software-logo"><img src="img/google-analytics.png" /></div>
 					<div class="software-text"><p>KPI Measurement</p></div>
 				</li>
 				<li>
-					<div class="software-logo"><img class="lazy" src="img/grey.gif" data-original="img/invision.png" /></div>
+					<div class="software-logo"><img src="img/invision.png" /></div>
 					<div class="software-text"><p>Prototyping / Usability</p></div>
 				</li>
 				<li>
-					<div class="software-logo"><img class="lazy" src="img/grey.gif" data-original="img/kissmetrics.png" /></div>
+					<div class="software-logo"><img src="img/kissmetrics.png" /></div>
 					<div class="software-text"><p>KPI Measurement</p></div>
 				</li>	
 				<li>
-					<div class="software-logo"><img class="lazy" src="img/grey.gif" data-original="img/optimal-sort.png" /></div>
+					<div class="software-logo"><img src="img/optimal-sort.png" /></div>
 					<div class="software-text"><p>Usability Testing</p></div>
 				</li>			
 			</ul>
@@ -305,21 +305,21 @@ if(isset($_POST['submit'])) {
 		<div id="where-we-are">
 			<h3>We are...</h3>
 			<div class="sidebar">
-				<img class="lazy" src="img/grey.gif" data-original="img/clock.png" />
+				<img src="img/clock.png" />
 			</div>
 			<div class="main-text">
 				<p>45 minutes away from <span>New York City</span>, most parts of <span>New Jersey</span>, and <span>Philadelphia</span>.</p>
 			</div>
 			<div class="clear"></div>
 			<div class="sidebar">
-				<img class="lazy" src="img/grey.gif" data-original="img/phone.png" />
+				<img src="img/phone.png" />
 			</div>
 			<div class="main-text">
 				<p>Reachable by phone: <span>888-888-8888</span></p>
 			</div>
 			<div class="clear"></div>
 			<div class="sidebar">
-				<img class="lazy" src="img/grey.gif" data-original="img/skype.png" />
+				<img src="img/skype.png" />
 			</div>
 			<div class="main-text">
 				<p>On Skype - talk with us at <span>optimino</span></p>
@@ -349,11 +349,6 @@ if(isset($_POST['submit'])) {
 		$('#fixed-header').scrollToFixed();
 		
 		$('#nav-wrapper a').smoothScroll(1000);
-		
-		// lazy load all images
-		$("img.lazy").lazyload({
-			effect       : "fadeIn"
-		});
 		
 		$('nav').prev().css('height', '57');
 		
@@ -424,5 +419,15 @@ if(isset($_POST['submit'])) {
 	  </style>
 	<![endif]-->
 	<script>selectnav('nav'); </script>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-39570713-1', 'optimino.com');
+	  ga('send', 'pageview');
+
+	</script>
 </body>
 </html>
