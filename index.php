@@ -94,9 +94,11 @@ if(isset($_POST['submit'])) {
 		<span id="header-logos">
 			<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.optimino.com" data-text="Optimino - User Experience Strategy &amp; Design" data-via="optimino">Tweet</a>
 			<div class="fb-like" data-href="http://www.optimino.com" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true"></div>
-			<a href="#"><img src="img/twitter-logo.png" class="twitter" /></a>
-			<a href="#"><img src="img/facebook-logo.png" class="facebook" /></a>
-			<a href="mailto:contact@optimino.com"><img src="img/mail-icon.png" class="mail" /></a>
+			<div id="header-social">
+				<a href="#"><img src="img/twitter-logo2.png" class="twitter" /></a>
+				<a href="#"><img src="img/facebook-logo2.png" class="facebook" /></a>
+				<a href="mailto:contact@optimino.com"><img src="img/mail-icon2.png" class="mail" /></a>
+			</div>
 		</span>
 	</div>
 	<nav>
@@ -171,14 +173,23 @@ if(isset($_POST['submit'])) {
 				<div class="why-us-icon">
 					<img src="img/icon-hermes.png" />
 					<span class="why-text">We're Fast</span>
+					<div class="why-us-description">
+						<p>We pride ourselves on being quick to deliver results. Oftentimes the same day as the project starts! We aim to iterate fast and can work with your team's existing tech stack, whether it's Sharepoint, Git, or Dropbox.</p>
+					</div>
 				</div>
 				<div class="why-us-icon">
 					<img src="img/icon-chart.png" />
 					<span class="why-text">We Measure Everything</span>
+					<div class="why-us-description">
+						<p>There's an old saying about opinions...we prefer to measure our output and recommendations by your data. Show us usage trends and we can deliver better results that are informed by your data.</p>
+					</div>
 				</div>
 				<div class="why-us-icon last">
 					<img src="img/icon-specialized.png" />
 					<span class="why-text">We're Specialized</span>
+					<div class="why-us-description">
+						<p>We are laser-focused on the user experience. Because we are so specialized we can work alongside your marketers, developers, and business analysts to identify areas of improvement for redesign initiatives, weekly sprints, and retainer-based engagements.</p>
+					</div>
 				</div>
 			</div>
 			<p class="sub">Optimino was started by <a href-"#">Timothy Jaeger</a> with one mission: to help large companies create better user engagements through informed product design.</p>
