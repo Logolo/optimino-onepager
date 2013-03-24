@@ -95,8 +95,8 @@ if(isset($_POST['submit'])) {
 			<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.optimino.com" data-text="Optimino - User Experience Strategy &amp; Design" data-via="optimino">Tweet</a>
 			<div class="fb-like" data-href="http://www.optimino.com" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true"></div>
 			<div id="header-social">
-				<a href="#"><img src="img/twitter-logo2.png" class="twitter" /></a>
-				<a href="#"><img src="img/facebook-logo2.png" class="facebook" /></a>
+				<a href="https://twitter.com/optimino" target="_blank"><img src="img/twitter-logo2.png" class="twitter" /></a>
+				<a href="#" target="_blank"><img src="img/facebook-logo2.png" class="facebook" /></a>
 				<a href="mailto:contact@optimino.com"><img src="img/mail-icon2.png" class="mail" /></a>
 			</div>
 		</span>

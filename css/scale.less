@@ -327,7 +327,7 @@ sup a {
   }
 
 /*
-  MIN-WIDTH: 19.9375em
+  MIN-WIDTH: 19.9375em (319px)
 --------------------------------------------- */
 
 @media screen and (min-width: 19.9375em) {	
@@ -439,19 +439,24 @@ sup a {
 	article #company-statement .company-img {
 		display:none;
 	}
-	
-	article #where-we-are {
-		display:none;
-	}
+
 	
 	article #positioning-statement #why-us {
 		width:auto;
+	}
+	
+	#positioning-statement #why-us .why-us-icon img {
+		height:100px;
+	}
+	
+	article #positioning-statement #why-us .why-us-description {
+		margin-top:10px;
 	}
 
   }
 
 /*
-  MIN-WIDTH: 29.9375em
+  MIN-WIDTH: 29.9375em (479px)
 --------------------------------------------- */
 
 @media screen and (min-width: 29.9375em) {
@@ -506,10 +511,6 @@ sup a {
 		display:none;
 	}
 	
-	article #where-we-are {
-		display:none;
-	}
-	
 	article #positioning-statement #why-us {
 		width:auto;
 	}
@@ -518,10 +519,18 @@ sup a {
 		margin-right:0px;
 	}
 	
+	#positioning-statement #why-us .why-us-icon img {
+		height:auto;
+	}
+	
+	article #positioning-statement #why-us .why-us-description {
+		margin-top:0px;
+	}
+	
   }
 
 /*
-  MIN-WIDTH: 38em
+  MIN-WIDTH: 38em (608px)
 --------------------------------------------- */
 
 @media screen and (min-width: 37.5em) {
@@ -645,13 +654,10 @@ sup a {
 	#header-logos .fb_edge_widget_with_comment {
 		display:none;
 	}
-	
-	article #where-we-are {
-		display:none;
-	}
+
 	
 	article #positioning-statement #why-us {
-		width:600px;
+		width:auto;
 	}
 	
 	article #positioning-statement #why-us .why-us-icon {
@@ -665,26 +671,13 @@ sup a {
 		margin-right:0px;
 		width:auto;
 	}
-
-  }
-
-/*
-  MIN-WIDTH: 99.9375em
---------------------------------------------- */
-
-@media screen and (min-width: 99.9375em) {
-
-  body {
-    max-width: 34.43736em;
-    line-height: 1.75em;
-    font-size: 112.5%;
-    }
-
+	
 	article #where-we-are {
 		display:none;
 	}
 
   }
+
 
 /*
   MIN-WIDTH: 800px
@@ -747,7 +740,7 @@ sup a {
 	}
 	
 	article #where-we-are {
-		display:none;
+		display:visible;
 	}
 	
 	article #positioning-statement #why-us {
@@ -757,7 +750,20 @@ sup a {
 	article #positioning-statement #why-us .why-us-icon {
 		width:auto;
 	}
+	
   }
+
+/*
+  MIN-WIDTH: 1000px
+--------------------------------------------- */
+
+@media screen and (min-width: 1000px) {
+
+	article #where-we-are {
+		display:none;
+	}
+}
+
 
 /*
   MIN-WIDTH: 1200px
@@ -796,6 +802,28 @@ sup a {
 		text-align:center;
 	}
 	
+	#positioning-statement #why-us .why-us-icon img {
+		height:auto;
+	}
+	
+}
+
+/*
+  MIN-WIDTH: 99.9375em (1599px)
+--------------------------------------------- */
+
+@media screen and (min-width: 99.9375em) {
+
+  body {
+    max-width: 34.43736em;
+    line-height: 1.75em;
+    font-size: 112.5%;
+    }
+
+	article #where-we-are {
+		display:visible;
+	}
+
 }
 
 /*
