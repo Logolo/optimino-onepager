@@ -340,7 +340,7 @@ if(isset($_POST['submit'])) {
 								
 			<p class="requiredNote">All fields are required.</p>
 			
-			<input type="submit" value="Send Message" name="submit" id="submitButton" title="Click here to submit your message!" />
+			<input type="submit" onClick="ga.push(['trackEvent', 'Contact', 'Submit', 'Optimino Contact Form']);" value="Send Message" name="submit" id="submitButton" title="Click here to submit your message!" />
 		</form>
 		<div id="where-we-are">
 			<h3>We are...</h3>
