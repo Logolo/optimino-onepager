@@ -39,11 +39,39 @@ if(isset($_POST['submit'])) {
 
 	//If there is no error, send the email
 	if(!isset($hasError)) {
-		$emailTo = 'contact@optimino.com'; //Put your own email address here
-		$body = "Name: $name \n\nEmail: $email \n\nSubject: $subject \n\nComments:\n $comments";
-		$headers = 'From: Optimino Website <'.$emailTo.'>' . "\r\n" . 'Reply-To: ' . $email;
+		require 'class.phpmailer.php';
 
-		mail($emailTo, $subject, $body, $headers);
+		$mail = new PHPMailer;
+
+		$mail->IsSMTP();                                      // Set mailer to use SMTP
+		$mail->Host = 'mail.optimino.com';  // Specify main and backup server
+		$mail->SMTPAuth = true;                               // Enable SMTP authentication
+		$mail->Username = 'contact@optimino.com';                            // SMTP username
+		$mail->Password = 'yayaya';                           // SMTP password
+		$mail->SMTPSecure = 'tls';                            // Enable encryption, 'ssl' also accepted
+
+		$mail->From = 'contact@optimino.com';
+		$mail->FromName = 'Mailer';
+		$mail->AddAddress('contact@optimino.com', 'Optimino Contact');  // Add a recipient
+		$mail->AddReplyTo('contact@optimino.com', 'Optimino Contact');
+		//$mail->AddCC('cc@example.com');
+		//$mail->AddBCC('bcc@example.com');
+
+		$mail->WordWrap = 50;                                 // Set word wrap to 50 characters
+		$mail->AddAttachment('/var/tmp/file.tar.gz');         // Add attachments
+		$mail->AddAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
+		$mail->IsHTML(true);                                  // Set email format to HTML
+
+		$mail->Subject = 'From Optimino.com';
+		$mail->Body    = "Name: $name \n\nEmail: $email \n\nSubject: $subject \n\nComments:\n $comments";
+		$mail->AltBody = "Name: $name \n\nEmail: $email \n\nSubject: $subject \n\nComments:\n $comments";
+
+		if(!$mail->Send()) {
+		   echo 'Message could not be sent.';
+		   echo 'Mailer Error: ' . $mail->ErrorInfo;
+		   exit;
+		}
+		
 		$emailSent = true;
 	}
 }
@@ -77,6 +105,16 @@ if(isset($_POST['submit'])) {
   <link href='http://fonts.googleapis.com/css?family=PT+Serif:700' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-39570713-1', 'optimino.com');
+	  ga('send', 'pageview');
+
+	</script>
 </head>
 <body>	
   	<div id="fb-root"></div>
@@ -105,9 +143,9 @@ if(isset($_POST['submit'])) {
 	<nav>
 		<div id="nav-wrapper">
 			<ul id="nav">
+				<li class="first"><a href="#positioning-statement">About</a></li>
 				<li class="first"><a href="#services">Services</a></li>
 				<li><a href="#clients" class="active">Clients</a></li>
-				<li><a href="#software">Software</a></li>
 				<li><a href="#contact">Contact</a></li>
 			</ul>
 		</div>
@@ -116,6 +154,40 @@ if(isset($_POST['submit'])) {
 		<h2>Optimino is a User Experience Strategy & Design consultancy.</h2><h3>We work with large companies on building and improving their products, platforms, and ecosystems.</h3>
 	 <img src="img/wireframe-bg2.jpg" height="300" class="company-img">
 	</div>
+	<div id="logo-top-scrolled"></div>
+	<div id="positioning-statement">
+		<div class="container">
+			<h4>We Know UX</h4>
+    		<h5>We focus exclusively on <span class="focus">UX</span>, <span class="focus">UI</span>, <span class="focus">Prototyping</span>, and <span class="focus">Design</span> so your team can focus on the rest.</h5>
+			<div id="why-us">
+				<h6>Why choose us</h6>
+				<div class="why-us-icon">
+					<img src="img/icon-hermes.png" />
+					<span class="why-text">We're Fast</span>
+					<div class="why-us-description">
+						<p>We pride ourselves on being quick to deliver results. Oftentimes the same day as the project starts! We aim to iterate fast and can work with your team's existing tech stack, whether it's Sharepoint, Git, or Dropbox.</p>
+					</div>
+				</div>
+				<div class="why-us-icon">
+					<img src="img/icon-chart.png" />
+					<span class="why-text">We Measure Everything</span>
+					<div class="why-us-description">
+						<p>There's an old saying about opinions...we prefer to measure our output and recommendations by your data. Show us usage trends and we can deliver better results that are informed by your data.</p>
+					</div>
+				</div>
+				<div class="why-us-icon last">
+					<img src="img/icon-specialized.png" />
+					<span class="why-text">We're Specialized</span>
+					<div class="why-us-description">
+						<p>We are laser-focused on the user experience. Because we are so specialized we can work alongside your marketers, developers, and business analysts to identify areas of improvement for redesign initiatives, weekly sprints, and retainer-based engagements.</p>
+					</div>
+				</div>
+			</div>
+			<!-- 
+			<p class="sub">Optimino was started by <a href-"#">Timothy Jaeger</a> with one mission: to help large companies create better user engagements through informed product design.</p> -->
+			<p class="sub">Write us at <a href="mailto:contact@optimino.com">contact@optimino.com</a> or <a href="#contact">fill in the form below</a>.</p>
+		</div>
+	</div>
 	<div id="services">
 		<div class="container">
 			<h4>Our Services</h4>
@@ -123,7 +195,7 @@ if(isset($_POST['submit'])) {
 					<div class="service-image"><img class="logo" src="img/icon-ux3.png" /></div>
 					<div class="service-description">
 						<h5>User Experience (UX) Design</h5>
-						<p>We can create and optimize pathwasy for users to accomplish your business goals. Our approach to UX design incorporates both waterfall and agile approaches.</p>
+						<p>We create and optimize pathways for users to accomplish your business goals. Our approach to UX design incorporates both waterfall and agile approaches.</p>
 					</div>
 					<div class="service-image"><img class="logo" src="img/icon-ia3.png" /></div>
 					<div class="service-description">
@@ -164,40 +236,6 @@ if(isset($_POST['submit'])) {
 				</div>
 		</div>
 	</div>
-	<div id="logo-top-scrolled"></div>
-	<div id="positioning-statement">
-		<div class="container">
-			<h4>About Us</h4>
-    		<h5>We focus exclusively on <span class="focus">UX</span>, <span class="focus">UI</span>, <span class="focus">Prototyping</span>, and <span class="focus">Design</span> so your team can focus on the rest.</h5>
-			<div id="why-us">
-				<h6>Why choose us</h6>
-				<div class="why-us-icon">
-					<img src="img/icon-hermes.png" />
-					<span class="why-text">We're Fast</span>
-					<div class="why-us-description">
-						<p>We pride ourselves on being quick to deliver results. Oftentimes the same day as the project starts! We aim to iterate fast and can work with your team's existing tech stack, whether it's Sharepoint, Git, or Dropbox.</p>
-					</div>
-				</div>
-				<div class="why-us-icon">
-					<img src="img/icon-chart.png" />
-					<span class="why-text">We Measure Everything</span>
-					<div class="why-us-description">
-						<p>There's an old saying about opinions...we prefer to measure our output and recommendations by your data. Show us usage trends and we can deliver better results that are informed by your data.</p>
-					</div>
-				</div>
-				<div class="why-us-icon last">
-					<img src="img/icon-specialized.png" />
-					<span class="why-text">We're Specialized</span>
-					<div class="why-us-description">
-						<p>We are laser-focused on the user experience. Because we are so specialized we can work alongside your marketers, developers, and business analysts to identify areas of improvement for redesign initiatives, weekly sprints, and retainer-based engagements.</p>
-					</div>
-				</div>
-			</div>
-			<!-- 
-			<p class="sub">Optimino was started by <a href-"#">Timothy Jaeger</a> with one mission: to help large companies create better user engagements through informed product design.</p> -->
-			<p class="sub">Write us at <a href="mailto:contact@optimino.com">contact@optimino.com</a> or <a href="#contact">fill in the form below</a>.</p>
-		</div>
-	</div>
 	<div id="clients" class="gradient">
 		<div class="container">
 			<h4>Companies we've worked with</h4>
@@ -211,6 +249,7 @@ if(isset($_POST['submit'])) {
 			</div>
 		</div>
 	</div>
+	<!-- 
 	<div id="software">
 		<div class="container">
 			<h4>Software we regularly use</h4>
@@ -254,6 +293,7 @@ if(isset($_POST['submit'])) {
 			</ul>
 		</div>
 	</div>
+	-->
 	<div id="contact">
 		<div id="contactWrapper" class="container" role="form">
 		<h4>Contact</h4>
@@ -315,7 +355,7 @@ if(isset($_POST['submit'])) {
 				<img src="img/phone.png" />
 			</div>
 			<div class="main-text">
-				<p>Reachable by phone: <span>888-888-8888</span></p>
+				<p>Reachable by phone: <span>(518) 712-9466</span></p>
 			</div>
 			<div class="clear"></div>
 			<div class="sidebar">
@@ -419,15 +459,5 @@ if(isset($_POST['submit'])) {
 	  </style>
 	<![endif]-->
 	<script>selectnav('nav'); </script>
-	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-	  ga('create', 'UA-39570713-1', 'optimino.com');
-	  ga('send', 'pageview');
-
-	</script>
 </body>
 </html>
