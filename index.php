@@ -348,7 +348,7 @@ if(isset($_POST['submit'])) {
 				<img src="img/clock.png" />
 			</div>
 			<div class="main-text">
-				<p>40 minutes away from <span>New York City</span>, most parts of <span>New Jersey</span>, and <span>Philadelphia</span>.</p>
+				<p>50 minutes away from <span>New York City</span>, most parts of <span>New Jersey</span>, and <span>Philadelphia</span>.</p>
 			</div>
 			<div class="clear"></div>
 			<div class="sidebar">
