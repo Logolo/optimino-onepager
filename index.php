@@ -143,8 +143,8 @@ if(isset($_POST['submit'])) {
 	<nav>
 		<div id="nav-wrapper">
 			<ul id="nav">
-				<li class="first"><a href="#positioning-statement">About</a></li>
 				<li class="first"><a href="#services">Services</a></li>
+				<li class="first"><a href="#positioning-statement">About</a></li>
 				<li><a href="#clients" class="active">Clients</a></li>
 				<li><a href="#contact">Contact</a></li>
 			</ul>
@@ -155,39 +155,6 @@ if(isset($_POST['submit'])) {
 	 <img src="img/wireframe-bg2.jpg" height="300" class="company-img">
 	</div>
 	<div id="logo-top-scrolled"></div>
-	<div id="positioning-statement">
-		<div class="container">
-			<h4>We Know UX</h4>
-    		<h5>We focus exclusively on <span class="focus">UX</span>, <span class="focus">UI</span>, <span class="focus">Prototyping</span>, and <span class="focus">Design</span> so your team can focus on the rest.</h5>
-			<div id="why-us">
-				<h6>Why choose us</h6>
-				<div class="why-us-icon">
-					<img src="img/icon-hermes.png" />
-					<span class="why-text">We're Fast</span>
-					<div class="why-us-description">
-						<p>We pride ourselves on being quick to deliver results. Oftentimes the same day as the project starts! We aim to iterate fast and can work with your team's existing tech stack, whether it's Sharepoint, Git, or Dropbox.</p>
-					</div>
-				</div>
-				<div class="why-us-icon">
-					<img src="img/icon-chart.png" />
-					<span class="why-text">We Measure Everything</span>
-					<div class="why-us-description">
-						<p>There's an old saying about opinions...we prefer to measure our output and recommendations by your data. Show us usage trends and we can deliver better results that are informed by your data.</p>
-					</div>
-				</div>
-				<div class="why-us-icon last">
-					<img src="img/icon-specialized.png" />
-					<span class="why-text">We're Specialized</span>
-					<div class="why-us-description">
-						<p>We are laser-focused on the user experience. Because we are so specialized we can work alongside your marketers, developers, and business analysts to identify areas of improvement for redesign initiatives, weekly sprints, and retainer-based engagements.</p>
-					</div>
-				</div>
-			</div>
-			<!-- 
-			<p class="sub">Optimino was started by <a href-"#">Timothy Jaeger</a> with one mission: to help large companies create better user engagements through informed product design.</p> -->
-			<p class="sub">Write us at <a href="mailto:contact@optimino.com">contact@optimino.com</a> or <a href="#contact">fill in the form below</a>.</p>
-		</div>
-	</div>
 	<div id="services">
 		<div class="container">
 			<h4>Our Services</h4>
@@ -234,6 +201,39 @@ if(isset($_POST['submit'])) {
 						<p>We use data-driven techniques to monitor and make sense of your metrics - allow us to integrate our findings into your agile or waterfall-based timelines. Using tools such as <strong>Google Analytics</strong>, <strong>Kissmetrics</strong>, and <strong>Chartbeat</strong> give us a strong insight into your product or service.</p>
 					</div>
 				</div>
+		</div>
+	</div>
+	<div id="positioning-statement">
+		<div class="container">
+			<h4>We Know UX</h4>
+    		<h5>We focus exclusively on <span class="focus">UX</span>, <span class="focus">UI</span>, <span class="focus">Prototyping</span>, and <span class="focus">Design</span> so your team can focus on the rest.</h5>
+			<div id="why-us">
+				<h6>Why choose us</h6>
+				<div class="why-us-icon">
+					<img src="img/icon-hermes.png" />
+					<span class="why-text">We're Fast</span>
+					<div class="why-us-description">
+						<p>We pride ourselves on being quick to deliver results. Oftentimes the same day as the project starts! We aim to iterate fast and can work with your team's existing tech stack, whether it's Sharepoint, Git, or Dropbox.</p>
+					</div>
+				</div>
+				<div class="why-us-icon">
+					<img src="img/icon-chart.png" />
+					<span class="why-text">We Measure Everything</span>
+					<div class="why-us-description">
+						<p>There's an old saying about opinions...we prefer to measure our output and recommendations by your data. Show us usage trends and we can deliver better results that are informed by your data.</p>
+					</div>
+				</div>
+				<div class="why-us-icon last">
+					<img src="img/icon-specialized.png" />
+					<span class="why-text">We're Specialized</span>
+					<div class="why-us-description">
+						<p>We are laser-focused on the user experience. Because we are so specialized we can work alongside your marketers, developers, and business analysts to identify areas of improvement for redesign initiatives, weekly sprints, and retainer-based engagements.</p>
+					</div>
+				</div>
+			</div>
+			<!-- 
+			<p class="sub">Optimino was started by <a href-"#">Timothy Jaeger</a> with one mission: to help large companies create better user engagements through informed product design.</p> -->
+			<p class="sub">Write us at <a href="mailto:contact@optimino.com">contact@optimino.com</a> or <a href="#contact">fill in the form below</a>.</p>
 		</div>
 	</div>
 	<div id="clients" class="gradient">
