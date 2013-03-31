@@ -48,7 +48,7 @@ if(isset($_POST['submit'])) {
 		$mail->SMTPAuth = true;                               // Enable SMTP authentication
 		$mail->Username = 'hello@optimino.com';                            // SMTP username
 		$mail->Password = 'b1p0l4r!';                           // SMTP password
-		$mail->SMTPSecure = 'tls';                            // Enable encryption, 'ssl' also accepted
+		$mail->SMTPSecure = 'ssl';                            // Enable encryption, 'ssl' also accepted
 
 		$mail->From = 'hello@optimino.com';
 		$mail->FromName = 'Mailer';
