@@ -54,33 +54,6 @@ if(isset($_POST['submit'])) {
 		$mail->AltBody = "Name: $name \n\nEmail: $email \n\nSubject: $subject \n\nComments:\n $comments";
 		$mail->AddAddress('hello@optimino.com');
 
-       /*
-
-		$mail->IsSMTP();                                      // Set mailer to use SMTP
-		$mail->Host = 'smtp.gmail.com';  // Specify main and backup server
-		$mail->SMTPAuth = true;                               // Enable SMTP authentication
-		$mail->Username = 'hello@optimino.com';                            // SMTP username
-		$mail->Password = 'b1p0l4r!';                           // SMTP password
-		$mail->SMTPSecure = 'ssl';                            // Enable encryption, 'ssl' also accepted
-
-		$mail->From = 'hello@optimino.com';
-		$mail->FromName = 'Mailer';
-		$mail->AddAddress('hello@optimino.com', 'Optimino Contact');  // Add a recipient
-		$mail->AddReplyTo('hello@optimino.com', 'Optimino Contact');
-		//$mail->AddCC('cc@example.com');
-		//$mail->AddBCC('bcc@example.com');
-
-		$mail->WordWrap = 50;                                 // Set word wrap to 50 characters
-		$mail->AddAttachment('/var/tmp/file.tar.gz');         // Add attachments
-		$mail->AddAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
-		$mail->IsHTML(true);                                  // Set email format to HTML
-
-		$mail->Subject = 'From Optimino.com';
-		$mail->Body    = "Name: $name \n\nEmail: $email \n\nSubject: $subject \n\nComments:\n $comments";
-		$mail->AltBody = "Name: $name \n\nEmail: $email \n\nSubject: $subject \n\nComments:\n $comments";
-		
-		*/
-
 		if(!$mail->Send()) {
 		   echo 'Message could not be sent.';
 		   echo 'Mailer Error: ' . $mail->ErrorInfo;
