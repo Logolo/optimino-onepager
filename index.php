@@ -124,7 +124,7 @@ if(isset($_POST['submit'])) {
 			<div id="header-social">
 				<a href="https://twitter.com/optimino" target="_blank"><img src="img/twitter-logo2.png" class="twitter" /></a>
 				<a href="https://www.facebook.com/pages/Optimino/390172884432153" target="_blank"><img src="img/facebook-logo2.png" class="facebook" /></a>
-				<a href="mailto:contact@optimino.com"><img src="img/mail-icon2.png" class="mail" /></a>
+				<a href="mailto:hello@optimino.com"><img src="img/mail-icon2.png" class="mail" /></a>
 			</div>
 		</span>
 	</div>
@@ -221,7 +221,7 @@ if(isset($_POST['submit'])) {
 			</div>
 			<!-- 
 			<p class="sub">Optimino was started by <a href-"#">Timothy Jaeger</a> with one mission: to help large companies create better user engagements through informed product design.</p> -->
-			<p class="sub">Write us at <a href="mailto:contact@optimino.com">contact@optimino.com</a> or <a href="#contact">fill in the form below</a>.</p>
+			<p class="sub">Write us at <a href="mailto:hello@optimino.com">hello@optimino.com</a> or <a href="#contact">fill in the form below</a>.</p>
 		</div>
 	</div>
 	<div id="clients" class="gradient">
