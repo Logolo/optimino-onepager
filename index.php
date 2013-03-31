@@ -42,6 +42,18 @@ if(isset($_POST['submit'])) {
 		require 'class.phpmailer.php';
 
 		$mail = new PHPMailer;
+        
+		$mail->SMTPAuth = true;
+		$mail->Host     = "ssl://smtp.gmail.com";
+		$mail->Port     = 465;
+		$mail->Username = "hello@optimino.com";
+		$mail->Password = "b1p0l4r!";
+		$mail->FromName = "Tim Jaeger";
+		$mail->Subject  = "test";
+		$mail->Body     = "Test body";
+		$mail->AddAddress('hello@optimino.com');
+
+       /*
 
 		$mail->IsSMTP();                                      // Set mailer to use SMTP
 		$mail->Host = 'smtp.gmail.com';  // Specify main and backup server
@@ -65,6 +77,8 @@ if(isset($_POST['submit'])) {
 		$mail->Subject = 'From Optimino.com';
 		$mail->Body    = "Name: $name \n\nEmail: $email \n\nSubject: $subject \n\nComments:\n $comments";
 		$mail->AltBody = "Name: $name \n\nEmail: $email \n\nSubject: $subject \n\nComments:\n $comments";
+		
+		*/
 
 		if(!$mail->Send()) {
 		   echo 'Message could not be sent.';
