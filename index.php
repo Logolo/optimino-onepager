@@ -357,7 +357,7 @@ if(isset($_POST['submit'])) {
 	</div>
   </article>
   <footer>
-	<p>(c) 2013 Optimino LLC. All rights reserved. Get in touch with us: <a href="mailto:contact@optimino.com">contact@optimino.com</a></p>
+	<p>(c) 2013 Optimino LLC. All rights reserved. Get in touch with us: <a href="mailto:hello@optimino.com">hello@optimino.com</a></p>
   </footer>
   <script type="text/javascript">
 	$(document).ready(function() {
