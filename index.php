@@ -50,7 +50,7 @@ if(isset($_POST['submit'])) {
 		$mail->Password = "b1p0l4r!";
 		$mail->FromName = "Optimino Website";
 		$mail->Subject  = "From Optimino.com";
-		$mail->Body     = "Name: $name \n\nEmail: $email \n\nSubject: $subject \n\nComments:\n $comments";
+		$mail->Body     = "Name:<br /> $name \n\nEmail: $email \n\nSubject: $subject \n\nComments:\n $comments";
 		$mail->AltBody = "Name: $name \n\nEmail: $email \n\nSubject: $subject \n\nComments:\n $comments";
 		$mail->AddAddress('hello@optimino.com');
 
