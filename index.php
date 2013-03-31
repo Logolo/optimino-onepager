@@ -48,9 +48,10 @@ if(isset($_POST['submit'])) {
 		$mail->Port     = 465;
 		$mail->Username = "hello@optimino.com";
 		$mail->Password = "b1p0l4r!";
-		$mail->FromName = "Tim Jaeger";
-		$mail->Subject  = "test";
-		$mail->Body     = "Test body";
+		$mail->FromName = "Optimino Website";
+		$mail->Subject  = "From Optimino.com";
+		$mail->Body     = "Name: $name \n\nEmail: $email \n\nSubject: $subject \n\nComments:\n $comments";
+		$mail->AltBody = "Name: $name \n\nEmail: $email \n\nSubject: $subject \n\nComments:\n $comments";
 		$mail->AddAddress('hello@optimino.com');
 
        /*
