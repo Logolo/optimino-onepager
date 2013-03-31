@@ -44,16 +44,16 @@ if(isset($_POST['submit'])) {
 		$mail = new PHPMailer;
 
 		$mail->IsSMTP();                                      // Set mailer to use SMTP
-		$mail->Host = 'mail.optimino.com';  // Specify main and backup server
+		$mail->Host = 'smtp.gmail.com';  // Specify main and backup server
 		$mail->SMTPAuth = true;                               // Enable SMTP authentication
-		$mail->Username = 'contact@optimino.com';                            // SMTP username
-		$mail->Password = 'yayaya';                           // SMTP password
+		$mail->Username = 'hello@optimino.com';                            // SMTP username
+		$mail->Password = 'b1p0l4r!';                           // SMTP password
 		$mail->SMTPSecure = 'tls';                            // Enable encryption, 'ssl' also accepted
 
-		$mail->From = 'contact@optimino.com';
+		$mail->From = 'hello@optimino.com';
 		$mail->FromName = 'Mailer';
-		$mail->AddAddress('contact@optimino.com', 'Optimino Contact');  // Add a recipient
-		$mail->AddReplyTo('contact@optimino.com', 'Optimino Contact');
+		$mail->AddAddress('hello@optimino.com', 'Optimino Contact');  // Add a recipient
+		$mail->AddReplyTo('hello@optimino.com', 'Optimino Contact');
 		//$mail->AddCC('cc@example.com');
 		//$mail->AddBCC('bcc@example.com');
 
