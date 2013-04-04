@@ -334,7 +334,7 @@ if(isset($_POST['submit'])) {
 								
 			<p class="requiredNote">All fields are required.</p>
 			
-			<input type="submit" name="submit" onclick="_gaq.push(['_trackEvent', 'Site Forms', 'Contact', 'Contact Us']);" id="submitButton" title="Click here to submit your message!" />
+			<input type="submit" name="submit" id="submitButton" title="Click here to submit your message!" />
 		</form>
 		<div id="where-we-are">
 			<h3>We are...</h3>
@@ -385,6 +385,10 @@ if(isset($_POST['submit'])) {
 		$('#nav-wrapper a').smoothScroll(1000);
 		
 		$('nav').prev().css('height', '57');
+		
+		$('#submitButton').click(function(){
+			_gaq.push(['_trackEvent', 'Site Forms', 'Contact', 'Contact Us']);
+		});
 	
 		
 		// validate signup form on keyup and submit
