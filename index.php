@@ -93,14 +93,20 @@ if(isset($_POST['submit'])) {
   <link href='http://fonts.googleapis.com/css?family=PT+Serif:700' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
-	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+<script type="text/javascript">
 
-	  ga('create', 'UA-39570713-1', 'optimino.com');
-	  ga('send', 'pageview');
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-39570713-2']);
+  _gaq.push(['_setDomainName', 'optimino.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
 
 	</script>
 </head>
@@ -379,20 +385,6 @@ if(isset($_POST['submit'])) {
 		$('#nav-wrapper a').smoothScroll(1000);
 		
 		$('nav').prev().css('height', '57');
-		
-		$('#submitButton').on('click', function() {
-		  ga('send', 'event', 'button', 'click', 'contact form');
-		});
-		
-		$('#analytics-test').on('click', function() {
-		ga('send', {
-		  'hitType': 'event',          // Required.
-		  'eventCategory': 'button',   // Required.
-		  'eventAction': 'click',      // Required.
-		  'eventLabel': 'nav buttons',
-		  'eventValue': 4
-			});
-		});
 	
 		
 		// validate signup form on keyup and submit
