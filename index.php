@@ -221,7 +221,7 @@ if(isset($_POST['submit'])) {
 			</div>
 			<!-- 
 			<p class="sub">Optimino was started by <a href-"#">Timothy Jaeger</a> with one mission: to help large companies create better user engagements through informed product design.</p> -->
-			<p class="sub">Write us at <a href="mailto:hello@optimino.com">hello@optimino.com</a> or <a href="#contact">fill in the form below</a>.</p>
+			<p class="sub">Write us at <a href="mailto:hello@optimino.com">hello@optimino.com</a> or <a href="#contact" id="analytics-test">fill in the form below</a>.</p>
 		</div>
 	</div>
 	<div id="clients" class="gradient">
@@ -382,6 +382,16 @@ if(isset($_POST['submit'])) {
 		
 		$('#submitButton').on('click', function() {
 		  ga('send', 'event', 'button', 'click', 'contact form');
+		});
+		
+		$('#analytics-test').on('click', function() {
+		ga('send', {
+		  'hitType': 'event',          // Required.
+		  'eventCategory': 'button',   // Required.
+		  'eventAction': 'click',      // Required.
+		  'eventLabel': 'nav buttons',
+		  'eventValue': 4
+			});
 		});
 	
 		
