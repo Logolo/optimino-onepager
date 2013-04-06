@@ -125,25 +125,23 @@ if(isset($_POST['submit'])) {
 			<img src="img/optimino-logo.png" class="optimino-logo" />
 		</a>
 		<span id="header-logos">
-			<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.optimino.com" data-text="Optimino - User Experience Strategy &amp; Design" data-via="optimino">Tweet</a>
-			<div class="fb-like" data-href="http://www.optimino.com" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true"></div>
 			<div id="header-social">
 				<a href="https://twitter.com/optimino" target="_blank"><img src="img/twitter-logo2.png" class="twitter" /></a>
 				<a href="https://www.facebook.com/pages/Optimino/390172884432153" target="_blank"><img src="img/facebook-logo2.png" class="facebook" /></a>
 				<a href="mailto:hello@optimino.com"><img src="img/mail-icon2.png" class="mail" /></a>
 			</div>
 		</span>
+		<nav>
+			<div id="nav-wrapper">
+				<ul id="nav">
+					<li class="first"><a href="#services" onclick="_gaq.push(['_trackEvent', 'Site Links', 'Navigation', 'Services']);">Services</a></li>
+					<li class="first"><a href="#positioning-statement" onclick="_gaq.push(['_trackEvent', 'Site Links', 'Navigation', 'About']);">About</a></li>
+					<li><a href="#clients" class="active" onclick="_gaq.push(['_trackEvent', 'Site Links', 'Navigation', 'Clients']);">Clients</a></li>
+					<li><a href="#contact" onclick="_gaq.push(['_trackEvent', 'Site Links', 'Navigation', 'Contact']);">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
 	</div>
-	<nav>
-		<div id="nav-wrapper">
-			<ul id="nav">
-				<li class="first"><a href="#services">Services</a></li>
-				<li class="first"><a href="#positioning-statement">About</a></li>
-				<li><a href="#clients" class="active">Clients</a></li>
-				<li><a href="#contact">Contact</a></li>
-			</ul>
-		</div>
-	</nav>
 	<div id="company-statement">
 		<h2>Optimino is a User Experience Strategy & Design consultancy.</h2><h3>We work with large companies on building and improving their products, platforms, and ecosystems.</h3>
 	 <img src="img/wireframe-bg2.jpg" height="300" class="company-img">
@@ -364,6 +362,10 @@ if(isset($_POST['submit'])) {
   </article>
   <footer>
 	<p>(c) 2013 Optimino LLC. All rights reserved. Get in touch with us: <a href="mailto:hello@optimino.com">hello@optimino.com</a></p>
+	<div id="social-media">
+		<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.optimino.com" data-text="Optimino - User Experience Strategy &amp; Design" data-via="optimino">Tweet</a>
+		<div class="fb-like" data-href="http://www.optimino.com" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true"></div>
+	</div>
   </footer>
   <script type="text/javascript">
 	$(document).ready(function() {
