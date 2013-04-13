@@ -29,7 +29,7 @@ article .twitter-share-button {
 }
 
 #fixed-header {
-	background-color:#000;
+	background-color:#fff;
 	color:#fff;
 	width:100%;
 	/* padding:0px 20px; */
@@ -39,6 +39,7 @@ article .twitter-share-button {
 	nav {
 		background-color:#efefef;
 		border-bottom:1px solid #ccc;
+		border-top:1px solid #ececec;
 	}
 	
 	a {
@@ -62,10 +63,14 @@ article .twitter-share-button {
 #header-logos {
 	float:right;
 	padding-right:100px;
-	margin-top:7px;
+	margin-top:3px;
 	
 	a {
 		border-bottom:0px solid #000;
+	}
+	
+	a:hover {
+		background:none;
 	}
 	
 	img {
@@ -287,6 +292,15 @@ article .twitter-share-button {
 		position:relative;
 		margin-bottom:40px;
 		
+		ul {
+			margin-left:15px;
+			list-style-image: url('../img/green-arrow.png');
+		}
+		
+		li {
+		
+		}
+		
 		h5 {
 			color:#E83646;
 			margin-bottom:0px;
@@ -450,14 +464,15 @@ article .twitter-share-button {
 }
 
 #company-statement {
-	/*background: url(../img/wireframe-bg.jpg) no-repeat center center fixed; 
-    -webkit-background-size: cover;
+	/*
+	-webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover; */
-	height:300px;
+	height:380px;
 	position:relative;
 	overflow:hidden;
+	background-color:#3691E7;
 	
 	.company-img {
 		margin:0 auto;
@@ -481,6 +496,29 @@ article .twitter-share-button {
 		top:138px;
 		width:500px;
 		left:50px;
+	}
+	
+	p {
+		font-family: 'Lato', sans-serif;
+		font-size:2.8em;
+		width:600px;
+		margin:0 auto;
+		padding-top:102px;
+		line-height:1em;
+		color:#fff;
+		text-align:center;
+		
+		span.apps {
+			color:#000;
+		}
+		
+		span.web {
+			color:#000;
+		}
+		
+		span.service {
+			color:#000;
+		}
 	}
 }
 
@@ -559,6 +597,7 @@ footer {
 	display:block;
 	margin:0 auto;
 	overflow:hidden;
+	height:38px;
 	padding:@container-padding;
 	font-family: 'Lato', sans-serif;
 }

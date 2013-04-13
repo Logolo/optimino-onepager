@@ -122,7 +122,7 @@ if(isset($_POST['submit'])) {
   <article>
 	<div id="fixed-header">
 		<a href="#nav-wrapper">
-			<img src="img/optimino-logo.png" class="optimino-logo" />
+			<img src="img/optimino-logo-small.png" class="optimino-logo" />
 		</a>
 		<span id="header-logos">
 			<div id="header-social">
@@ -143,8 +143,13 @@ if(isset($_POST['submit'])) {
 		</nav>
 	</div>
 	<div id="company-statement">
+		<!-- 
 		<h2>Optimino is a User Experience Strategy & Design consultancy.</h2><h3>We work with large companies on building and improving their products, platforms, and ecosystems.</h3>
 	 <img src="img/wireframe-bg2.jpg" height="300" class="company-img">
+	-->
+	<p>We create and optimize 
+	breathtakingly simple 
+	<span class="apps">apps</span>, <span class="web">websites</span>, and <span class="service">services</span>.</p>
 	</div>
 	<div id="logo-top-scrolled"></div>
 	<div id="services">
@@ -155,7 +160,41 @@ if(isset($_POST['submit'])) {
 					<div class="service-description">
 						<h5>User Experience (UX) Design</h5>
 						<p>We create and optimize pathways for users to accomplish your business goals. Our approach to UX design incorporates both waterfall and agile approaches.</p>
+						<ul>
+							<li>Information Architecture</li>
+							<li>Responsive Design</li>
+							<li>User Flows</li>
+							<li>Usability Testing</li>
+							<li>Graphic User Interface Design</li>
+							<li>UI Design</li>
+						</ul>
 					</div>
+					<div class="service-image"><img class="logo" src="img/icon-prototype3.png" /></div>
+					<div class="service-description">
+						<h5>Rapid Prototyping</h5>
+						<p>Rapid Prototyping involves getting your ideas into the hands of both actual users and business stakeholders as quickly as possible in order to get feedback. We can create mobile and web-based prototypes that mimic both native and non-native apps for almost any platform - including iPhone, iPad, Android - even console games.</p>
+						<ul>
+							<li>Web Application Development</li>
+							<li>Sencha Touch Design and Development</li>
+							<li>Axure Protoyping</li>
+							<li>Web Application Development</li>
+							<li>Product Development</li>
+						</ul>
+					</div>
+					<div class="service-image"><img class="logo" src="img/icon-kpis3.png" /></div>
+					<div class="service-description">
+						<h5>KPIs / Metrics</h5>
+						<p>We use data-driven techniques to monitor and make sense of your metrics - allow us to integrate our findings into your agile or waterfall-based timelines. Using tools such as <strong>Google Analytics</strong>, <strong>Kissmetrics</strong>, and <strong>Chartbeat</strong> give us a strong insight into your product or service.</p>
+						<ul>
+							<li>Business Intelligence</li>
+							<li>Google Analytics Optimization</li>
+							<li>Key Performance Indicator Strategy</li>
+							<li>Tableau Data Visualization (coming soon)</li>
+							<li>Keyword Research</li>
+							<li>Custom Goal Funnels and Event Creation</li>
+						</ul>
+					</div>
+					<!-- 
 					<div class="service-image"><img class="logo" src="img/icon-ia3.png" /></div>
 					<div class="service-description">
 						<h5>Information Architecture</h5>
@@ -168,36 +207,30 @@ if(isset($_POST['submit'])) {
 						<h5>Agile UX Training</h5>
 						<p>We offer Agile UX training to jump-start your organization into one of 'continuous innovation'. Our training will help bring your UXers, developers, visual designers and product managers up to speed with the latest techniques to help you reach maximum efficiency.</p>
 					</div>
-					<div class="service-image"><img class="logo" src="img/icon-prototype3.png" /></div>
-					<div class="service-description">
-						<h5>Rapid Prototyping</h5>
-						<p>Rapid Prototyping involves getting your ideas into the hands of both actual users and business stakeholders as quickly as possible in order to get feedback. We can create mobile and web-based prototypes that mimic both native and non-native apps for almost any platform - including iPhone, iPad, Android - even console games.</p>
-					</div>
+					-->
+					
 				</div>
+				<!-- 
 				<div class="row">
 					<div class="service-image"><img class="logo" src="img/icon-ui3.png" /></div>
 					<div class="service-description">
 						<h5>UI and Responsive Design</h5>
 						<p>We can create an elegant UI for your application - everything from Metro (flat) style UIs to more complex skeumorphic techniques are all doable.</p>
 					</div>
+					-->
+					<!-- 
 					<div class="service-image"><img class="logo" src="img/icon-userresearch3.png" /></div>
 					<div class="service-description">
 						<h5>User Research</h5>
 						<p>We conduct both online, field, and office-based research to help you understand the usage patterns and pain points of your target user base. We can map their behavior and make recommendations based on our findings.</p>
 					</div>
 				</div>
-				<div class="row">
-					<div class="service-image"><img class="logo" src="img/icon-kpis3.png" /></div>
-					<div class="service-description">
-						<h5>KPIs / Metrics</h5>
-						<p>We use data-driven techniques to monitor and make sense of your metrics - allow us to integrate our findings into your agile or waterfall-based timelines. Using tools such as <strong>Google Analytics</strong>, <strong>Kissmetrics</strong>, and <strong>Chartbeat</strong> give us a strong insight into your product or service.</p>
-					</div>
-				</div>
+				-->
 		</div>
 	</div>
 	<div id="positioning-statement">
 		<div class="container">
-			<h4>We Know UX</h4>
+			<h4>We are champions of the User Experience - we'll help you grow and optimize your business</h4>
     		<h5>We focus exclusively on <span class="focus">UX</span>, <span class="focus">UI</span>, <span class="focus">Prototyping</span>, and <span class="focus">Design</span> so your team can focus on the rest.</h5>
 			<div id="why-us">
 				<h6>Why choose us</h6>
