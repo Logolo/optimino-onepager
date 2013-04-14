@@ -150,6 +150,7 @@ if(isset($_POST['submit'])) {
 	<p>We create and optimize 
 	breathtakingly simple 
 	<span class="apps">apps</span>, <span class="web">websites</span>, and <span class="service">services</span>.</p>
+		<div id="banner"><span>Free Consultation</span></div>
 	</div>
 	<div id="logo-top-scrolled"></div>
 	<div id="services">
@@ -420,6 +421,11 @@ if(isset($_POST['submit'])) {
 		$('#nav-wrapper a').smoothScroll(1000);
 		
 		$('nav').prev().css('height', '57');
+		
+		$('#banner').click(function(){
+			window.location='mailto:hello@optimino.com?subject=Free Consultation';
+			_gaq.push(['_trackEvent', 'Site Forms', 'Lead Generation', 'Free Consultation']);
+		});
 		
 		$('#submitButton').click(function(){
 			_gaq.push(['_trackEvent', 'Site Forms', 'Contact', 'Contact Us']);
