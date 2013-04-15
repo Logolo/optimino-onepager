@@ -126,6 +126,9 @@ if(isset($_POST['submit'])) {
 		</a>
 		<span id="header-logos">
 			<div id="header-social">
+				<span id="header-number">
+					<p>Call us at: (646) 290-8538</p>
+				</span>
 				<a href="https://twitter.com/optimino" target="_blank"><img src="img/twitter-logo2.png" class="twitter" /></a>
 				<a href="https://www.facebook.com/pages/Optimino/390172884432153" target="_blank"><img src="img/facebook-logo2.png" class="facebook" /></a>
 				<a href="mailto:hello@optimino.com"><img src="img/mail-icon2.png" class="mail" /></a>
@@ -323,6 +326,29 @@ if(isset($_POST['submit'])) {
 	<div id="contact">
 		<div id="contactWrapper" class="container" role="form">
 		<h4>Contact</h4>
+		<div id="where-we-are">
+			<h3>We are...</h3>
+			<div class="sidebar">
+				<img src="img/clock.png" />
+			</div>
+			<div class="main-text">
+				<p>40 minutes away from <span>New York City</span>, most parts of <span>New Jersey</span>, and <span>Philadelphia</span>.</p>
+			</div>
+			<div class="clear"></div>
+			<div class="sidebar">
+				<img src="img/phone.png" />
+			</div>
+			<div class="main-text">
+				<p>Reachable by phone: <span>(646) 290-8538</span></p>
+			</div>
+			<div class="clear"></div>
+			<div class="sidebar">
+				<img src="img/skype.png" />
+			</div>
+			<div class="main-text">
+				<p>On Skype - talk with us at <span>optimino</span></p>
+			</div>
+		</div>
 		<?php if(isset($hasError)) { //If errors are found ?>
 			<p class="error">Please check if you've filled all the fields with valid information and try again. Thank you.</p>
 			<script type="text/javascript">
@@ -368,38 +394,18 @@ if(isset($_POST['submit'])) {
 			
 			<input type="submit" name="submit" id="submitButton" title="Click here to submit your message!" />
 		</form>
-		<div id="where-we-are">
-			<h3>We are...</h3>
-			<div class="sidebar">
-				<img src="img/clock.png" />
-			</div>
-			<div class="main-text">
-				<p>40 minutes away from <span>New York City</span>, most parts of <span>New Jersey</span>, and <span>Philadelphia</span>.</p>
-			</div>
-			<div class="clear"></div>
-			<div class="sidebar">
-				<img src="img/phone.png" />
-			</div>
-			<div class="main-text">
-				<p>Reachable by phone: <span>(518) 712-9466</span></p>
-			</div>
-			<div class="clear"></div>
-			<div class="sidebar">
-				<img src="img/skype.png" />
-			</div>
-			<div class="main-text">
-				<p>On Skype - talk with us at <span>optimino</span></p>
-			</div>
-		</div>
 		</div>
 	</div>
   </article>
   <footer>
-	<p>(c) 2013 Optimino LLC. All rights reserved. Get in touch with us: <a href="mailto:hello@optimino.com">hello@optimino.com</a></p>
+	<p>&copy; 2013 Optimino LLC. 31 Victory Court, Metuchen, NJ 08840 All rights reserved. Get in touch with us: <a href="mailto:hello@optimino.com">hello@optimino.com</a></p>
 	<div id="social-media">
 		<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.optimino.com" data-text="Optimino - User Experience Strategy &amp; Design" data-via="optimino">Tweet</a>
 		<div class="fb-like" data-href="http://www.optimino.com" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true"></div>
 	</div>
+	<p>
+		New Jersey User Experience Design | New York User Experience Design | Rapid Prototyping | Responsive Design | New York Responsive Design | New York Product Design | New Jersey Product Design
+	</p>
   </footer>
   <script type="text/javascript">
 	$(document).ready(function() {

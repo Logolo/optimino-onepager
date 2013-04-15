@@ -19,6 +19,8 @@ article .twitter-share-button {
 #social-media {
 	text-align:center;
 	margin:0 auto;
+	height:40px;
+	padding-top:17px;
 	display:block;
 }
 
@@ -41,10 +43,15 @@ article .twitter-share-button {
 		border-bottom:1px solid #ccc;
 		border-top:1px solid #ececec;
 	}
+
 	
 	a {
 		border-bottom:0px solid #fff;
 		overflow:hidden;
+	}
+	
+	a:hover {
+		background:none;
 	}
 	
 	img {
@@ -57,6 +64,14 @@ article .twitter-share-button {
 	#header-social {
 		float:left;
 		overflow:hidden;
+	}
+	
+	#header-number {
+		float:left;
+		font-size:1em;
+		color:#000;
+		font-family: 'Lato', sans-serif;
+		margin-top:10px;
 	}
 }
 
@@ -545,13 +560,12 @@ article .twitter-share-button {
 }
 
 #where-we-are {
-	position:absolute;
-	top:140px;
-	left:728px;
-	width:330px;
+	width:auto;
 	font-family: 'Arvo', serif;
 	background-color:#55a6f2;
 	padding:10px;
+	overflow:hidden;
+	margin-bottom:20px;
 	
 	h3 {
 		color:#fff;
@@ -564,7 +578,7 @@ article .twitter-share-button {
 	.clear {
 		clear:both;
 		display:block;
-		height:30px;
+		height:10px;
 	}
 	
 	.sidebar {
@@ -576,7 +590,6 @@ article .twitter-share-button {
 		float:left;
 		overflow:hidden;
 		color:#333;
-		width:280px;
 		margin-left:5px;
 		
 		p {
